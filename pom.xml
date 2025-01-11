@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>spring-boot-libraries</artifactId>
+    <name>spring-boot-libraries</name>
+    <packaging>war</packaging>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-validation</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-tomcat</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- ShedLock -->
+        <dependency>
+            <groupId>net.javacrumbs.shedlock</groupId>
+            <artifactId>shedlock-spring</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>net.javacrumbs.shedlock</groupId>
+            <artifactId>shedlock-provider-jdbc-template</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+        </dependency>
+    </dependencies>
+
+    <repositories>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+    </repositories>
+
+    <build>
+        <finalName>spring-boot-libraries</finalName>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+    </build>
+
+    <properties>
+        <!-- The main class to start by executing java -jar -->
+        <start-class>com.baeldung.graphql.DemoApplication</start-class>
+        <togglz.version>4.4.0</togglz.version>
+        <rome.version>1.9.0</rome.version>
+        <graphql-java-tools.version>5.2.4</graphql-java-tools.version>
+        <git-commit-id-plugin.version>2.2.4</git-commit-id-plugin.version>
+        <modelmapper.version>3.2.0</modelmapper.version>
+        <problem-spring-web.version>0.29.1</problem-spring-web.version>
+        <jackson-datatype-problem.version>0.27.1</jackson-datatype-problem.version>
+        <shedlock.version>5.13.0</shedlock.version>
+        <barbecue.version>1.5-beta1</barbecue.version>
+        <barcode4j.version>2.1</barcode4j.version>
+        <qrgen.version>2.6.0</qrgen.version>
+        <zxing.version>3.3.0</zxing.version>
+        <bucket4j.version>8.9.0</bucket4j.version>
+        <bucket4j-spring-boot-starter.version>0.10.3</bucket4j-spring-boot-starter.version>
+        <caffeine.version>3.1.8</caffeine.version>
+        <okapi.version>0.4.6</okapi.version>
+        <qrcodegen.version>1.8.0</qrcodegen.version>
+    </properties>
+
+</project>
